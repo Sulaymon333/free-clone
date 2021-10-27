@@ -1,0 +1,83 @@
+@import './variable.scss';
+
+.light-entrepreneur-section {
+    margin-bottom: 8rem;
+
+    .container-center {
+        width: 70%;
+        margin: 0 auto;
+
+        .section-top,
+        .section-bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 3.5rem;
+
+            > * {
+                flex: 0 1 550px;
+            }
+
+            .image-left,
+            .image-right {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 300px;
+
+                .title {
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    color: $textColor;
+                    margin-bottom: 1.5rem;
+                }
+
+                .description .text {
+                    color: $textColor;
+                    line-height: 1.7;
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    margin-bottom: 1.3rem;
+                }
+
+                .cta-btn {
+                    background: #cf76ac;
+                    color: white;
+                    font-size: 1.2rem;
+                    padding: 0.8rem 1.1rem;
+                    align-self: flex-start;
+                    margin-top: 1.5rem;
+                    border-radius: 5px;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                .cta-btn:hover {
+                    background: $white;
+                    border: 2px solid #cf76ac;
+                    color: #cf76ac;
+                }
+            }
+        }
+
+        .section-bottom {
+            .info {
+                .cta-btn {
+                    background: #66b0d3;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        background: $white;
+                        border: 2px solid #66b0d3;
+                        color: #66b0d3;
+                    }
+                }
+            }
+        }
+    }
+}

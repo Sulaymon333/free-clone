@@ -1,0 +1,24 @@
+.hero-section {
+    display: grid;
+    place-content: center;
+    background: #f191bb;
+    // padding: 5rem;
+    height: 50vh;
+    margin-bottom: 5rem;
+
+    .hero-image {
+        animation: gifAnime 3s ease-in-out infinite forwards;
+    }
+}
+
+@keyframes gifAnime {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}

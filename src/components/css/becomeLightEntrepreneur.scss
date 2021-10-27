@@ -1,0 +1,76 @@
+@import './variable.scss';
+
+.become-light-entrepreneur {
+    margin-bottom: 5rem;
+
+    .container-medium {
+        border-width: 4px;
+        border-style: solid;
+        border-bottom-width: 0;
+        border-image: linear-gradient(to right, #1373af 0%, #cf76ac 100%) 100% 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+
+        .logo-box {
+            width: 16rem;
+            background: #fff;
+            padding: 0 2.5rem;
+            position: absolute;
+            top: -2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-box {
+            margin-top: 6rem;
+            color: $textColor;
+
+            .title {
+                font-weight: 500;
+                font-size: 1.7rem;
+                margin-bottom: 1rem;
+            }
+
+            .description {
+                font-weight: 300;
+            }
+        }
+        .cta-btn-lg {
+            background: #66b0d3;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 1.5rem 5rem;
+            margin-top: 2rem;
+            margin-bottom: 2.3rem;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: $white;
+                border: 2px solid #66b0d3;
+                color: #66b0d3;
+            }
+        }
+
+        .contact-box {
+            .got-question {
+                font-weight: 400;
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .contact-info {
+                font-weight: 300;
+            }
+        }
+    }
+}
